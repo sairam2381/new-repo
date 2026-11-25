@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HelloWorld from "./hello-world";
+import HelloChennai from "./hello-chennai";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,6 +9,7 @@ function App() {
     <div>
       <HelloWorld />
       <HelloWorld />
+      <HelloChennai />
     </div>
   );
 }
