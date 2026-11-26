@@ -1,23 +1,16 @@
 import react from "react";
 import "./boxes.css";
-const BoxComponent = () => {
+const BoxComponent = (props) => {
   return (
     <div className="parent">
-      <div className="child">
-        <div className="value">100+</div> <div className="detail">Colleges</div>
-      </div>
-      <div className="child">
-        <div className="value">150</div>{" "}
-        <div className="detail">professional trainers </div>
-      </div>
-      <div className="child">
-        <div className="value">1000+</div>{" "}
-        <div className="detail">study materials</div>
-      </div>
-      <div className="child">
-        <div className="value">10000</div>{" "}
-        <div className="detail">students</div>
-      </div>
+      {props.data.map((item, index) => {
+        return (
+          <div className="child">
+            <div className="value">{item.number}</div>{" "}
+            <div className="detail">{item.name}</div>
+          </div>
+        );
+      })}
     </div>
   );
 };

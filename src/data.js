@@ -15,3 +15,26 @@ export const symbolOfExcellence = {
     training in aptitude, coding, and web/mobile development. We foster
     a culture of inclusivity and personal growth.`,
 };
+
+export const BoxComponentData = [
+  {
+    number: "100+",
+    name: "Colleges",
+  },
+  {
+    number: "150",
+    name: "professional trainers",
+  },
+  {
+    number: "1000+",
+    name: "study materials",
+  },
+  {
+    number: "10000",
+    name: "students",
+  },
+  {
+    number: "10?",
+    name: "Captains",
+  },
+];

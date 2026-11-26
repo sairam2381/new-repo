@@ -5,7 +5,7 @@ import MiComponent from "./mi/mi-component";
 import BoxComponent from "./boxes/boxes";
 import SymbolOfExcellence from "./symbol-of-excellence/symbol-of-excellence";
 import HelloComponent from "./props/hello-component";
-import { symbolOfExcellence } from "./data";
+import { BoxComponentData, symbolOfExcellence } from "./data";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ function App() {
       <HelloWorld />
       <HelloChennai />
       <MiComponent /> */}
-      <BoxComponent />
+      <BoxComponent data={BoxComponentData} />
       <SymbolOfExcellence data={symbolOfExcellence} />
       <SymbolOfExcellence />
       {/* <HelloComponent data={1} color="Red" />
