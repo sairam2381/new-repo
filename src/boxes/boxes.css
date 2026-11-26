@@ -1,4 +1,8 @@
 .child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   height: 500px;
   background-color: red;
@@ -33,4 +37,16 @@
   @media (max-width: 920px) {
     flex-direction: column;
   }
+}
+.value {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+.detail {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
 }
