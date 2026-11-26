@@ -3,7 +3,9 @@ import "./symbol-of-excellence.css";
 const SymbolOfExcellence = () => {
   return (
     <div className="symbol_parent">
-      <h1>A Symbol of Excellence in Placement Training</h1>
+      <h1 className="symbol_heading">
+        A Symbol of Excellence in Placement Training
+      </h1>
       <div className="symbol_para">
         Aptitude Guru Hem was born from the aspiration to create a learning
         environment that inspires greatness. Our founder, driven by personal
@@ -12,7 +14,7 @@ const SymbolOfExcellence = () => {
         success.
       </div>
       <div className="symbol_parent_two">
-        <div>
+        <div className="symbol_parent_child">
           <div className="symbol_parent_heading">Our Vision</div>
           <div className="symbol_parent_subheading">
             Our vision is to empower individuals from diverse backgrounds to
@@ -20,8 +22,9 @@ const SymbolOfExcellence = () => {
             that knowledge has the power to transcend boundaries.
           </div>
         </div>
-        <div>
-          <div className="symbol_parent_heading">Our Mission</div>
+        <div className="divider"></div>
+        <div className="symbol_parent_child">
+          <div className="symbol_parent_heading_two">Our Mission</div>
           <div className="symbol_parent_subheading">
             Our mission is to revolutionize education by providing comprehensive
             training in aptitude, coding, and web/mobile development. We foster
