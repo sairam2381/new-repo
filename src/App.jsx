@@ -3,6 +3,7 @@ import HelloWorld from "./hello-world";
 import HelloChennai from "./hello-chennai";
 import MiComponent from "./mi/mi-component";
 import BoxComponent from "./boxes/boxes";
+import SymbolOfExcellence from "./symbol-of-excellence/symbol-of-excellence";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,8 @@ function App() {
       <HelloWorld />
       <HelloChennai />
       <MiComponent /> */}
-      <BoxComponent />
+      {/* <BoxComponent /> */}
+      <SymbolOfExcellence />
     </div>
   );
 }
