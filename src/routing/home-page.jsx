@@ -8,7 +8,7 @@ const HomePage = () => {
       <h2 onClick={() => navigate("/dashboard")}>Dashboard</h2>
       <h2 onClick={() => navigate("/dashboard/second")}>Route two</h2>
       <h2 onClick={() => navigate("/dashboard/three")}>Route three</h2>
-      <h2 onClick={() => navigate("/dashboard/four")}>Route four</h2>
+      <h2 onClick={() => navigate("/four")}>Route four</h2>
     </div>
   );
 };
