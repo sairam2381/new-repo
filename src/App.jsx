@@ -6,22 +6,27 @@ import BoxComponent from "./boxes/boxes";
 import SymbolOfExcellence from "./symbol-of-excellence/symbol-of-excellence";
 import HelloComponent from "./props/hello-component";
 import { BoxComponentData, symbolOfExcellence } from "./data";
-
+import { toast } from "react-toastify";
+import UsestateComponent from "./usestate/usestate-component";
 function App() {
   const [count, setCount] = useState(0);
-
+  const triggerFunction = () => {
+    // toast.success("Login successful!");
+    toast.error("Login successful!");
+  };
   return (
     <div>
       {/* <HelloWorld />
       <HelloWorld />
       <HelloChennai />
       <MiComponent /> */}
-      <BoxComponent data={BoxComponentData} />
+      {/* <BoxComponent data={BoxComponentData} />
       <SymbolOfExcellence data={symbolOfExcellence} />
-      <SymbolOfExcellence />
+      <SymbolOfExcellence /> */}
       {/* <HelloComponent data={1} color="Red" />
       <HelloComponent data={100} />
       <HelloComponent data="Sreesairam" color="White" /> */}
+      <UsestateComponent />
     </div>
   );
 }
