@@ -9,6 +9,7 @@ import { BoxComponentData, symbolOfExcellence } from "./data";
 import { toast } from "react-toastify";
 import UsestateComponent from "./usestate/usestate-component";
 import UseStateTwo from "./usestate/usestate-2";
+import UseEffectComponent from "./useEffect/useEffect-component";
 function App() {
   const [count, setCount] = useState(0);
   const triggerFunction = () => {
@@ -28,7 +29,8 @@ function App() {
       <HelloComponent data={100} />
       <HelloComponent data="Sreesairam" color="White" /> */}
       {/* <UsestateComponent /> */}
-      <UseStateTwo />
+      {/* <UseStateTwo /> */}
+      <UseEffectComponent />
     </div>
   );
 }
