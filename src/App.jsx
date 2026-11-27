@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 import UsestateComponent from "./usestate/usestate-component";
 import UseStateTwo from "./usestate/usestate-2";
 import UseEffectComponent from "./useEffect/useEffect-component";
+import Fetchapi from "./fetch-api/fetch-api";
 function App() {
   const [count, setCount] = useState(0);
   const triggerFunction = () => {
@@ -30,7 +31,8 @@ function App() {
       <HelloComponent data="Sreesairam" color="White" /> */}
       {/* <UsestateComponent /> */}
       {/* <UseStateTwo /> */}
-      <UseEffectComponent />
+      {/* <UseEffectComponent /> */}
+      <Fetchapi />
     </div>
   );
 }
