@@ -1,8 +1,10 @@
-import react from "react";
-const RouteOne=()=>{
+import { Outlet } from "react-router-dom";
 
-  return(
+const RouteOne = () => (
+  <>
     <h1>Route 1</h1>
-  )
-}
+    <Outlet />
+  </>
+);
+
 export default RouteOne;

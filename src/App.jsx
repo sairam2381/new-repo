@@ -16,6 +16,8 @@ import RouteOne from "./routing/route-1";
 import RouteTwo from "./routing/route-2";
 import RouteThree from "./routing/route-3";
 import RouteFour from "./routing/route-4";
+import HomePage from "./routing/home-page";
+import NotFound from "./routing/not-found";
 function App() {
   const [count, setCount] = useState(0);
   const triggerFunction = () => {
@@ -24,7 +26,6 @@ function App() {
   };
   return (
     <div>
-      <h1>Hello world</h1>
       <Routes>
         {/* <HelloWorld />
       <HelloWorld />
@@ -40,9 +41,13 @@ function App() {
         {/* <UseStateTwo /> */}
         {/* <UseEffectComponent /> */}
         {/* <Fetchapi /> */}
-        <Route path="/" element={<RouteOne />} />
-        <Route path="/home" element={<RouteTwo />} />
-        <Route path="/search" element={<RouteThree />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<RouteOne />}>
+          <Route path="second" element={<RouteTwo />} />
+          <Route path="three" element={<RouteThree />} />
+        </Route>
+        <Route path="/four" element={<RouteFour />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
