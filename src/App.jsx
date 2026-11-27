@@ -10,7 +10,9 @@ import { toast } from "react-toastify";
 import UsestateComponent from "./usestate/usestate-component";
 import UseStateTwo from "./usestate/usestate-2";
 import UseEffectComponent from "./useEffect/useEffect-component";
+import { Routes, Route } from "react-router-dom";
 import Fetchapi from "./fetch-api/fetch-api";
+import RouteOne from "./routing/route-1";
 function App() {
   const [count, setCount] = useState(0);
   const triggerFunction = () => {
@@ -19,20 +21,24 @@ function App() {
   };
   return (
     <div>
-      {/* <HelloWorld />
+      <h1>Hello world</h1>
+      <Routes>
+        {/* <HelloWorld />
       <HelloWorld />
       <HelloChennai />
       <MiComponent /> */}
-      {/* <BoxComponent data={BoxComponentData} />
+        {/* <BoxComponent data={BoxComponentData} />
       <SymbolOfExcellence data={symbolOfExcellence} />
       <SymbolOfExcellence /> */}
-      {/* <HelloComponent data={1} color="Red" />
+        {/* <HelloComponent data={1} color="Red" />
       <HelloComponent data={100} />
       <HelloComponent data="Sreesairam" color="White" /> */}
-      {/* <UsestateComponent /> */}
-      {/* <UseStateTwo /> */}
-      {/* <UseEffectComponent /> */}
-      <Fetchapi />
+        {/* <UsestateComponent /> */}
+        {/* <UseStateTwo /> */}
+        {/* <UseEffectComponent /> */}
+        {/* <Fetchapi /> */}
+        <Route path="/home" element={<RouteOne />} />
+      </Routes>
     </div>
   );
 }
