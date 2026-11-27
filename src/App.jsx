@@ -13,6 +13,9 @@ import UseEffectComponent from "./useEffect/useEffect-component";
 import { Routes, Route } from "react-router-dom";
 import Fetchapi from "./fetch-api/fetch-api";
 import RouteOne from "./routing/route-1";
+import RouteTwo from "./routing/route-2";
+import RouteThree from "./routing/route-3";
+import RouteFour from "./routing/route-4";
 function App() {
   const [count, setCount] = useState(0);
   const triggerFunction = () => {
@@ -37,7 +40,9 @@ function App() {
         {/* <UseStateTwo /> */}
         {/* <UseEffectComponent /> */}
         {/* <Fetchapi /> */}
-        <Route path="/home" element={<RouteOne />} />
+        <Route path="/" element={<RouteOne />} />
+        <Route path="/home" element={<RouteTwo />} />
+        <Route path="/search" element={<RouteThree />} />
       </Routes>
     </div>
   );
