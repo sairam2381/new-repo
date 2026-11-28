@@ -26,29 +26,30 @@ function App() {
   };
   return (
     <div>
-      <Routes>
-        {/* <HelloWorld />
+      {/* <Routes> */}
+      {/* <HelloWorld />
       <HelloWorld />
       <HelloChennai />
       <MiComponent /> */}
-        {/* <BoxComponent data={BoxComponentData} />
+      {/* <BoxComponent data={BoxComponentData} />
       <SymbolOfExcellence data={symbolOfExcellence} />
       <SymbolOfExcellence /> */}
-        {/* <HelloComponent data={1} color="Red" />
+      {/* <HelloComponent data={1} color="Red" />
       <HelloComponent data={100} />
       <HelloComponent data="Sreesairam" color="White" /> */}
-        {/* <UsestateComponent /> */}
-        {/* <UseStateTwo /> */}
-        {/* <UseEffectComponent /> */}
-        {/* <Fetchapi /> */}
-        <Route path="/" element={<HomePage />} />
+      {/* <UsestateComponent /> */}
+      {/* <UseStateTwo /> */}
+      {/* <UseEffectComponent /> */}
+      {/* <Fetchapi /> */}
+      {/* <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<RouteOne />}>
           <Route path="second" element={<RouteTwo />} />
           <Route path="three" element={<RouteThree />} />
         </Route>
         <Route path="/four" element={<RouteFour />} />
         <Route path="*" element={<NotFound />} />
-      </Routes>
+      </Routes> */}
+      <Fetchapi />
     </div>
   );
 }
