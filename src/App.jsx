@@ -18,6 +18,8 @@ import RouteThree from "./routing/route-3";
 import RouteFour from "./routing/route-4";
 import HomePage from "./routing/home-page";
 import NotFound from "./routing/not-found";
+import ProductRouting from "./routing/products-routing";
+import DetailedProduct from "./routing/detailed-product";
 function App() {
   const [count, setCount] = useState(0);
   const triggerFunction = () => {
@@ -49,7 +51,12 @@ function App() {
         <Route path="/four" element={<RouteFour />} />
         <Route path="*" element={<NotFound />} />
       </Routes> */}
-      <Fetchapi />
+      {/* <Fetchapi /> */}
+      <Routes>
+        <Route path="/list-of-products" element={<ProductRouting />} />
+        <Route path="/product-details/:id" element={<DetailedProduct />} />
+      </Routes>
+      {/* <ProductRouting /> */}
     </div>
   );
 }
